@@ -1,0 +1,269 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #333;
+}
+
+
+
+/* Search bar */
+.hero-content .search-bar {
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+.search-bar {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* QUICK MENU */
+.quick-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background: #fff;
+    margin-top: 10px;
+}
+.menu-item {
+    text-align: center;
+    font-size: 14px;
+}
+
+.quick-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.quick-menu .menu-item {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.quick-menu .menu-item:hover {
+    background: #6bdcff;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* GALLERY */
+.gallery {
+    padding: 15px;
+}
+.gallery h2 {
+    margin-bottom: 10px;
+}
+.gallery-list {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+}
+.gallery-list img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+/* CATEGORY */
+.categories {
+    padding: 15px;
+}
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+.category-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* TEMPAT WISATA */
+.tempat-wisata {
+    padding: 15px;
+}
+.wisata-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+}
+.wisata-card {
+    padding: 10px;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+.wisata-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* REVIEW */
+.review {
+    padding: 15px;
+}
+.review-card {
+    background: #fcfbfb;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Tempat Wisata Populer */
+.tempat-wisata {
+    padding: 20px;
+}
+
+.wisata-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.wisata-card {
+    position: relative;
+    min-width: 230px;
+    height: 300px;
+    border-radius: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.wisata-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay hitam gradasi di bawah */
+.wisata-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+/* Text dalam foto */
+.wisata-info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    z-index: 2;
+}
+
+.wisata-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.wisata-info p {
+    margin: 3px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+.payment-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ffffff;
+    padding: 18px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-decoration: none;
+    margin: 20px;
+    transition: 0.25s ease;
+    border: 1px solid #f2f2f2;
+}
+
+.payment-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.payment-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4e8cff, #2f6eff);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+.payment-text h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #222;
+    font-weight: 600;
+}
+
+.payment-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* FOOTER */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+}
+.footer a {
+    text-decoration: none;
+    color: #0b59c7;
+    font-weight: bold;
+}
+
+

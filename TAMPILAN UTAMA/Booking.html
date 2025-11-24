@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Wisata</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 480px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .input-box {
+            margin-bottom: 15px;
+        }
+
+        .input-box label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .input-box input,
+        .input-box select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: #ff4f5a;
+            color: white;
+            padding: 12px;
+            border: none;
+            font-size: 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.2s;
+        }
+
+        .btn-submit:hover {
+            background: #ff303a;
+        }
+
+        .success {
+            padding: 12px;
+            background: #d4ffd8;
+            color: #145a1f;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 15px;
+            display: none;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Form Booking Wisata</h2>
+
+        <div class="input-box">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama kamu">
+        </div>
+
+        <div class="input-box">
+            <label>Pilih Tempat Wisata</label>
+            <select>
+                <option value="">-- Pilih Destinasi --</option>
+                <option>Danau Linow</option>
+                <option>Pantai Paal</option>
+                <option>Manado Boulevard Walk</option>
+                <option>Pulau Siladen</option>
+                <option>Taman Laut Bunaken</option>
+                <option>Monumen Yesus Memberkati</option>
+                <option>God Bless Park</option>
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label>Tanggal Berkunjung</label>
+            <input type="date">
+        </div>
+
+        <div class="input-box">
+            <label>Jumlah Orang</label>
+            <input type="number" min="1" value="1">
+        </div>
+
+        <button class="btn-submit" onclick="submitBooking()">Pesan Sekarang</button>
+
+        <div class="success" id="successMsg">
+            Booking berhasil! 🎉  
+        </div>
+    </div>
+
+    <script>
+        function submitBooking() {
+            document.getElementById("successMsg").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

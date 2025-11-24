@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorit Villa</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+        }
+
+        /* HEADER */
+        .header {
+            background: url('pemandangan.jpg') center/cover no-repeat;
+            height: 270px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        /* SECTION FAVORIT */
+        .favorit-container {
+            padding: 40px 20px;
+            background: #fff;
+        }
+
+        .favorit-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ff006a;
+        }
+
+        .favorit-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .favorit-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .favorit-card {
+            background: white;
+            padding: 15px;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .favorit-card:hover {
+            transform: scale(1.03);
+        }
+
+        .favorit-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .favorit-card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .favorit-desc {
+            margin: 0;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .favorit-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+
+        .favorit-btn {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background: linear-gradient(45deg, #ff589b, #ff006a);
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .favorit-btn:hover {
+            opacity: 0.85;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">TEMPAT FAVORIT</div>
+
+    <!-- FAVORIT SECTION -->
+    <section class="favorit-container">
+        <h2 class="favorit-title">TEMPAT Favorit Pengunjung</h2>
+        <p class="favorit-subtitle">Dipilih berdasarkan rating tertinggi & view terbaik</p>
+
+        <div class="favorit-list">
+
+            <!-- CARD 1 -->
+            <div class="favorit-card">
+                <img src="god bless.jpg" alt="Favorit 1">
+                <h3>GOD BLASE</h3>
+                <p class="favorit-desc">Pemandangan laut – cocok untuk keluarga.</p>
+                <div class="favorit-info">
+                    <span class="rating">⭐ 4.9</span>
+                    <span class="lokasi">📍 Manado</span>
+                </div>
+                <a href="#" class="favorit-btn">Booking Sekarang</a>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="favorit-card">
+                <img src="Hotel1.jpeg" alt="Favorit 2">
+                <h3>Mercure Tateli Resort</h3>
+                <p class="favorit-desc">Suasana tenang – cocok healing.</p>
+                <div class="favorit-info">
+                    <span class="rating">⭐ 4.7</span>
+                    <span class="lokasi">📍 Tateli</span>
+                </div>
+                <a href="#" class="favorit-btn">Booking Sekarang</a>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="favorit-card">
+                <img src="villa4.webp" alt="Favorit 3">
+                <h3>Eliana Luxury Villa</h3>
+                <p class="favorit-desc">Villa mewah dengan fasilitas lengkap & private pool.</p>
+                <div class="favorit-info">
+                    <span class="rating">⭐ 4.8</span>
+                    <span class="lokasi">📍 Tomohon</span>
+                </div>
+                <a href="#" class="favorit-btn">Booking Sekarang</a>
+            </div>
+
+        </div>
+
+       
+
+</body>
+</html>

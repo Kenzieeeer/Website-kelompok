@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran</title>
+
+    <style>
+        body {
+            background: #eaf2ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .payment-container {
+            width: 90%;
+            max-width: 420px;
+            margin: 25px auto;
+        }
+
+        /* HEADER */
+        .pay-header {
+            background: linear-gradient(135deg, #0b59c7, #0047a8);
+            padding: 20px;
+            border-radius: 15px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .pay-header h2 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        /* CARD PEMBAYARAN */
+        .pay-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: 0.25s;
+        }
+        .pay-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+        }
+
+        /* GAMBAR PEMBAYARAN – FIX POTONG / KECIL / ACAK */
+        .pay-card img {
+            width: 70px;           /* seragam */
+            height: 70px;          /* seragam */
+            object-fit: contain;   /* agar tidak terpotong */
+            background: white;     /* kalau PNG transparan */
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .pay-card p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* TOMBOL KEMBALI */
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 12px;
+            background: #0b59c7;
+            color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .back-btn:hover {
+            background: #094eb0;
+        }
+
+        /* RESPONSIVE HP KECIL */
+        @media (max-width: 420px) {
+            .pay-card img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="payment-container">
+        <div class="pay-header">
+            <h2>Pembayaran</h2>
+            <p>Pilih metode pembayaran yang tersedia</p>
+        </div>
+
+        <div class="pay-card">
+            <img src="Logo QRIS.png" alt="QRIS">
+            <p>QRIS</p>
+        </div>
+
+        <div class="pay-card">
+            <img src="Bank1.jpg" alt="Bank">
+            <p>Transfer Bank</p>
+        </div>
+
+        <div class="pay-card">
+            <img src="Dana,Ovo,Gopay.jpeg" alt="E-Wallet">
+            <p>E-Wallet (Dana, OVO, Gopay)</p>
+        </div>
+
+        <div class="pay-card">
+            <img src="Debit.png" alt="Debit">
+            <p>Kartu Kredit / Debit</p>
+        </div>
+
+        <a href="index.html" class="back-btn">Kembali</a>
+    </div>
+
+</body>
+</html>

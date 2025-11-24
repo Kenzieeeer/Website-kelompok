@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Wisata</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* HEADER OMBY WAVY */
+        .header {
+            background: url('Gal.jpg') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .gallery-section {
+            padding: 20px;
+        }
+
+        .gallery-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* GRID GALERI */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        /* EFEK HOVER */
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(70%);
+        }
+
+        /* TEKS JUDUL DI ATAS FOTO */
+        .gallery-caption {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER GALERI -->
+    <div class="header">
+        GALERI WISATA
+    </div>
+
+    <!-- SECTION GALERI -->
+    <section class="gallery-section">
+        <h2 class="gallery-title">Tempat Wisata Paling Populer</h2>
+
+        <div class="gallery-grid">
+
+            <!-- Foto 1 -->
+            <div class="gallery-item">
+                <img src="PantaiBiru.webp" alt="Pantai Biru">
+                <div class="gallery-caption">Pantai Biru</div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="gallery-item">
+                <img src="Pegununga.jpg" alt="Pegunungan">
+                <div class="gallery-caption">Pegunungan</div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="gallery-item">
+                <img src="Airterjun1.jpg" alt="Air Terjun">
+                <div class="gallery-caption">Air Terjun</div>
+            </div>
+
+            <!-- Foto 4 -->
+            <div class="gallery-item">
+                <img src="DanauTenang.jpg" alt="Danau">
+                <div class="gallery-caption">Danau Tenang</div>
+            </div>
+
+            <!-- Foto 5 -->
+            <div class="gallery-item">
+                <img src="Perbukitan.jpg" alt="Perbukitan">
+                <div class="gallery-caption">Perbukitan</div>
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+</html>
